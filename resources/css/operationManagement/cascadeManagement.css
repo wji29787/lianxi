@@ -1,0 +1,717 @@
+@font-face {
+    font-family: 'COLLECTION3';
+    src: url('DESIGN.COLLECTION3.KLONDIKE.TTF');
+}
+
+.cascade-content-box {
+    flex: 5.4;
+    padding: 0 0.3rem;
+    height: 100%;
+    background-color: #030d26;
+}
+
+.cascade-reload {
+    height: 0.72rem;
+}
+
+.cascade-reload span {
+    margin-top: 0.22rem;
+    padding: 0 0.25rem;
+    height: 0.38rem;
+    line-height: 0.38rem;
+    font-size: 0.2rem;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #4968a5;
+    cursor: pointer;
+}
+
+.cascade-content {
+    display: flex;
+    height: calc(100% - 0.72rem);
+}
+
+/**标签列表盒子**/
+.edit-content-bottom-tabs {
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+    width: 2.3rem;
+}
+
+/** tab结构 **/
+.bottom-tabs-list-box {
+    box-sizing: border-box;
+    padding: 0.12rem 0.26rem 0 0.17rem;
+    width: 100%;
+    height: calc(100% - 0.5rem);
+    background: url(../../images/edit_tabs_bg2.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.tabs-search {
+    padding: 0.11rem 0;
+    height: 0.38rem;
+    overflow: hidden;
+}
+
+.tabs-search-input {
+    float: left;
+    width: 1.52rem;
+    height: 0.38rem;
+    box-sizing: border-box;
+    padding: 0 0.1rem;
+    font-size: 0.16rem;
+    border: 2px solid #2a3b6f;
+    background-color: transparent;
+    color: #fff;
+}
+
+.tabs-search-btn {
+    float: left;
+    width: 0.35rem;
+    height: 0.38rem;
+    line-height: 0.38rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    background-color: #2a3b6f;
+    cursor: pointer;
+}
+
+.bottom-tabs-list {
+    overflow-y: auto;
+    height: calc(100% - 0.6rem);
+}
+
+.bottom-tabs-list li {
+    position: relative;
+    height: 0.6rem;
+    border-bottom: 0.01rem solid #374569;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+}
+
+.bottom-tabs-list li:hover:before, .bottom-tabs-list li.active:before, .bottom-tabs-list li:hover:after, .bottom-tabs-list li.active:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -0.1rem;
+    width: 0.12rem;
+    height: 0.2rem;
+    background-image: url(../../images/edit-tabs-arrow.png);
+    background-repeat: no-repeat;
+}
+
+.bottom-tabs-list li.active:before {
+    left: 0.1rem;
+    background-position: -17px -9px !important;
+}
+
+.bottom-tabs-list li.active:after {
+    right: 0.1rem;
+    background-position: -42px -9px !important;
+}
+
+.bottom-tabs-list li:hover:before {
+    left: 0.1rem;
+    background-position: -67px -9px;
+}
+
+.bottom-tabs-list li:hover:after {
+    right: 0.1rem;
+    background-position: -92px -9px;
+}
+
+/**tab内容编辑结构**/
+.bottom-tabs-list li span {
+    display: block;
+    display: -none;
+    line-height: 0.6rem;
+    padding: 0 0.34rem;
+    font-size: 0.2rem;
+    color: #fff;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.bottom-tabs-list input {
+    margin-top: 0.09rem;
+    padding: 0 0.12rem;
+    width: 69%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    border: 0;
+    border-radius: 0.05rem;
+    font-size: 0.2rem;
+}
+
+/** tab对应的操作结构 **/
+.bottom-tabs-op {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.5rem;
+    font-size: 0;
+    text-align: right;
+    overflow: hidden;
+}
+
+.bottom-tabs-op i {
+    display: inline-block;
+    margin-right: 0.16rem;
+    margin-top: 0.11rem;
+    width: 0.44rem;
+    height: 0.28rem;
+    line-height: 0.28rem;
+    text-align: center;
+    color: #fff;
+    background-color: #4a69a4;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.bottom-tabs-op i:hover {
+    background-color: #7582a4;
+}
+
+/*****级联内容右侧业务统计，个人资源分布，空间占比，服务状态，模块****/
+.cascade-main-box {
+    position: relative;
+    flex: 1;
+    margin-left: 0.3rem;
+    height: 100%;
+    background: url("../../images/cascade_main_bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.cascade-main {
+    position: relative;
+    display: flex;
+    margin: 0.14rem 0;
+    height: 4.11rem;
+
+}
+
+.cascade-main:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.14rem;
+    width: 100%;
+    border-bottom: 1px dashed #324e7c;
+}
+
+.cascade-main-item:hover, .cascade-main-item.active {
+    box-shadow: 0 0 0.2rem 0.05rem #8fc7ee inset;
+}
+
+.cascade-main {
+    background: url("../../images/cascade_item_bg.png") no-repeat left 0;
+    background-size: 2px 100%;
+}
+
+.cascade-main .cascade-main-item {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: url("../../images/cascade_item_bg.png") no-repeat right 0;
+    background-size: 2px 100%;
+}
+
+.cascade-main-item-title {
+    position: relative;
+    margin: 0.27rem auto;
+    width: 1.4rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.22rem;
+    text-align: center;
+    color: #fff;
+    background-color: #0f204c;
+}
+
+.cascade-main-personal .cascade-main-item-title {
+    width: 1.66rem;
+}
+
+.cascade-main-item-title i {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+}
+
+.cascade-main-item-title ._lt {
+    left: 0;
+    top: 0;
+    border-left: 2px solid #7edbfd;
+    border-top: 2px solid #7edbfd;
+}
+
+.cascade-main-item-title ._rt {
+    right: 0;
+    top: 0;
+    border-right: 2px solid #7edbfd;
+    border-top: 2px solid #7edbfd;
+}
+
+.cascade-main-item-title ._lb {
+    left: 0;
+    bottom: 0;
+    border-left: 2px solid #7edbfd;
+    border-bottom: 2px solid #7edbfd;
+}
+
+.cascade-main-item-title ._rb {
+    right: 0;
+    bottom: 0;
+    border-right: 2px solid #7edbfd;
+    border-bottom: 2px solid #7edbfd;
+}
+
+/****业务统计内容***/
+.business-item {
+    position: relative;
+    margin: 0.5rem auto 0;
+    width: 2.58rem;
+    height: 0.96rem;
+    border: 2px solid #526596;
+    border-radius: 6px;
+}
+
+.business-item .business-item-title {
+    position: absolute;
+    left: 50%;
+    top: -0.11rem;
+    transform: translateX(-50%);
+    padding: 0 0.1rem;
+    height: 0.22rem;
+    line-height: 0.22rem;
+    font-size: 0.22rem;
+    background-color: #020c26;
+    color: #72a8f8;
+}
+
+.business-item .business-item-txt {
+    display: block;
+    margin-top: 0.12rem;
+    padding: 0.26rem 0.1rem;
+    text-align: center;
+}
+
+.business-item .business-item-txt b {
+    display: block;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font: normal 0.3rem 'COLLECTION3';
+    color: #fdfd99;
+    overflow: hidden;
+}
+
+.business-item:nth-of-type(2) .business-item-txt b {
+    color: #fc7979;
+}
+
+.business-item .business-item-txt i {
+    display: inline-block;
+    width: 0.4rem;
+    font-size: 0.16rem;
+    text-align: center;
+    color: #72a8f8;
+    font-weight: normal;
+}
+
+/********个人资源分布内容*********/
+.personal-item {
+    margin: 0.52rem 0 0 0.72rem;
+}
+
+.personal-item-title {
+    position: relative;
+    padding-left: 0.16rem;
+    height: 0.26rem;
+    line-height: 0.26rem;
+    font-size: 0.22rem;
+    color: #73a9fa;
+}
+
+.personal-item-title:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #73a9fa;
+}
+
+.personal-item-con {
+    display: flex;
+    margin-top: 0.15rem;
+    height: 0.54rem;
+    line-height: 0.54rem;
+    color: #fdfd99;
+    overflow: hidden;
+}
+
+.personal-item:nth-of-type(2) .personal-item-con {
+    color: #f97878;
+}
+
+.personal-item-con span:nth-child(1) {
+    display: block;
+    max-width: 1.2rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 0.22rem;
+}
+
+.personal-item-con span:nth-child(2) {
+    display: block;
+    flex: 1;
+    min-width: 0;
+    padding: 0 0.2rem;
+    font-size: 0.3rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: 'COLLECTION3';
+}
+
+.space-min {
+    position: relative;
+    margin: 0.4rem auto 0;
+    width: 2.52rem;
+    height: 2.54rem;
+    background: url("../../images/cascade_space_bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.space-box {
+    position: absolute;
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin-left: -1.1rem;
+    margin-top: -1.1rem;
+}
+
+.space-box i {
+    width: 0.26rem;
+    height: 0.38rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -0.13rem;
+    background-image: url(../../images/bg_kongjian4.png);
+    background-size: 100% 100%;
+    transform-origin: center 1.1rem;
+}
+
+.space-box i.active {
+    background-image: url('../../images/bg_kongjian3.png');
+    background-size: 100% 100%;
+}
+
+.space-txt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -0.58rem;
+    margin-top: -0.58rem;
+    width: 1.16rem;
+    height: 1.16rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.16rem;
+    font-size: 0.36rem;
+    text-indent: 0.05rem;
+    font-family: 'COLLECTION3';
+    color: #fdfd99;
+    box-shadow: 0 0 15px 5px #fdfd99 inset;
+}
+
+/********服务状态分布内容*********/
+.serve-item {
+    position: relative;
+    margin-top: 0.25rem;
+    margin-left: 0.45rem;
+    width: 2.37rem;
+    height: 0.5rem;
+}
+
+.serve-item-box {
+    float: left;
+    width: 2.26rem;
+    height: 0.46rem;
+    border: 0.02rem solid #1e2655;
+    background-color: #121c36;
+}
+
+.serve-item:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0.11rem;
+    height: 0.5rem;
+    background: url("../../images/cascade_serve_tlt_bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.serve-item-num {
+    float: left;
+    position: absolute;
+    top: -0.09rem;
+    left: 0;
+    padding: 0 0.1rem;
+    height: 0.52rem;
+    background-color: #1f2a56;
+}
+
+.serve-item-num span {
+    display: inline-block;
+    padding: 0 0.1rem;
+    line-height: 0.52rem;
+    font-size: 0.36rem;
+    color: #f97878;
+    font-family: 'COLLECTION3';
+}
+
+.serve-item.serve-free .serve-item-num span {
+    color: #fdfd99;
+}
+
+.serve-item-num i {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 0.6rem;
+    font-size: 0.16rem;
+    color: #73a9fa;
+}
+
+.serve-item-num:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.07rem;
+    border-color: #1e2655 transparent;
+    border-width: 7px 0 0 14px;
+    border-style: solid;
+    background-color: #030d26;
+}
+
+.serve-item-title {
+    float: right;
+    width: 1.3rem;
+    line-height: 0.42rem;
+    text-align: center;
+    font-size: 0.2rem;
+    color: #73a9fa;
+    background-size: 100% 100%;
+}
+
+.cascade-maincontent {
+    height: calc(100% - 4.11rem - 0.14rem - 0.14rem); /*高度加俩margin*/
+}
+
+.cascade-maincontent-item {
+    display: none;
+    height: 100%;
+}
+
+.cascade-maincontent-item.active {
+    display: block;
+}
+
+.business-canvas, .personal-canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.business-content {
+    position: relative;
+}
+
+.business-op {
+    position: absolute;
+    left: 0.96rem;
+    top: 0.15rem;
+}
+
+.business-op li {
+    float: left;
+    padding-right: 0.3rem;
+    height: 0.22rem;
+    line-height: 0.22rem;
+    font-size: 0.2rem;
+    color: #73a9fc;
+}
+
+.business-op i {
+    float: left;
+    position: relative;
+    margin-top: 0.02rem;
+    width: 0.18rem;
+    height: 0.18rem;
+    text-align: center;
+    box-shadow: 0 0 0.05rem #73a9fc inset;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.business-op li.active i:before {
+    content: '';
+    position: absolute;
+    left: 0.06rem;
+    top: 0.06rem;
+    width: 0.06rem;
+    height: 0.06rem;
+    background-color: #73a9fc;
+    border-radius: 50%;
+}
+
+.business-op span {
+    padding: 0 0.1rem;
+}
+
+.business-txt {
+    position: absolute;
+    right: 0.05rem;
+    top: 0.15rem;
+}
+
+.business-txt li {
+    float: left;
+    margin-right: 0.25rem;
+    width: 0.3rem;
+    font-size: 0.28rem;
+    color: #73a9fc;
+}
+
+.business-txt i {
+    display: block;
+    width: 0.3rem;
+    height: 0.46rem;
+}
+
+.business-txt li:nth-child(1) i {
+    background: -webkit-linear-gradient(top, #fc7979, #111e45);
+    background: -moz-linear-gradient(top, #fc7979, #111e45);
+    background: -ms-linear-gradient(top, #fc7979, #111e45);
+    background: linear-gradient(top, #fc7979, #111e45);
+}
+
+.business-txt li:nth-child(2) i {
+    background: -webkit-linear-gradient(top, #7aafff, #111e45);
+    background: -moz-linear-gradient(top, #7aafff, #111e45);
+    background: -ms-linear-gradient(top, #7aafff, #111e45);
+    background: linear-gradient(top, #7aafff, #111e45);
+}
+
+.business-txt em {
+    margin-left: -5px;
+    font-size: 0.24rem;
+}
+
+.space-content.active, .serve-content.active {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.2rem;
+    color: #fff;
+}
+
+/***添加删除弹层****/
+.cascade-add {
+    width: 6rem;
+}
+
+.add-delete {
+    width: 6rem;
+    padding-top: 0.12rem;
+}
+
+.add-delete-txt {
+    font-size: 0.2rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.6rem;
+}
+
+.add-delete-op {
+    padding: 0.25rem 0;
+    text-align: center;
+}
+
+.add-delete-op button {
+    width: 1.28rem;
+}
+
+.add-delete-op .sham-btn:first-child {
+    margin-right: 1.7rem;
+}
+
+/***用户名和终端号吗***/
+.cascade-add-item {
+    display: flex;
+    width: 4.7rem;
+    margin-left: 0.65rem;
+    margin-top: 0.4rem;
+}
+
+.cascade-add-item:nth-of-type(3) {
+    padding-bottom: 0.2rem;
+}
+
+.cascade-add-item label {
+    display: block;
+    width: 1.1rem;
+    line-height: 0.38rem;
+    font-size: 0.2rem;
+    color: #fff;
+}
+
+.cascade-add-item input {
+    flex: 1;
+    padding: 0 0.2rem;
+    height: 0.36rem;
+    border-radius: 0.04rem;
+    border: 0.01rem solid #4b68a4;
+    font-size: 0.2rem;
+    color: #fff;
+    background-color: #162448;
+}
+
+.loading-box {
+    display: none;
+    position: fixed;
+    z-index: 998;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.loading-box img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    width: 50px;
+    height: 50px;
+}
+

@@ -1,0 +1,104 @@
+i {
+  font-style: normal;
+}
+.content-box {
+  overflow-y: auto;
+  font-size: 0.2rem;
+}
+.content-box dl {
+  width: 100%;
+}
+.content-box dt {
+  height: 0.66rem;
+  width: 100%;
+  color: #eef5ff;
+  position: relative;
+  display: table-cell;
+  vertical-align: bottom;
+  padding-left: 0.14rem;
+}
+.content-box dt .der-line {
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 1.8rem;
+  height: 1px;
+  border-bottom: 1px solid #717fa5;
+}
+.content-box dd {
+  float: left;
+  width: 7.6rem;
+  height: 1.04rem;
+  box-sizing: border-box;
+  color: #eef5ff;
+  line-height: 1.1rem;
+}
+.content-box dd i,
+.content-box dd span {
+  display: inline-block;
+}
+.content-box dd i {
+  width: 2.3rem;
+  text-align: right;
+}
+.content-box dd span {
+  width: 5.2rem;
+  box-sizing: border-box;
+  padding-left: 0.28rem;
+}
+.content-box dd input {
+  height: 0.36rem;
+  width: 3.96rem;
+  padding-left: 6px;
+  border: 0.01rem solid #4a69a4;
+  background-color: #172449;
+  color: #eef5ff;
+  border-radius: 4px;
+  margin-right: 0.2rem;
+}
+.content-box dd select {
+  height: 0.36rem;
+  width: 3.96rem;
+  padding-left: 6px;
+  border: 0.01rem solid #4a69a4;
+  background-color: #172449;
+  color: #eef5ff;
+  border-radius: 4px;
+  margin-right: 0.2rem;
+  cursor: pointer;
+}
+.content-box dd .fi {
+  display: inline-block;
+  font-size: 0.24rem;
+  width: 0.52rem;
+  height: 0.36rem;
+  cursor: pointer;
+}
+.content-box dd .icon-kai {
+  color: #4a69a4;
+}
+.content-box dd .icon-guan {
+  color: #cccccc;
+}
+.content-box .submit_div {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+.content-box .submit_div button {
+  cursor: pointer;
+  width: 1.3rem;
+  height: 0.36rem;
+  border: none;
+  color: #FFFFFF;
+  font-size: 0.2rem;
+  text-align: center;
+  line-height: 0.36rem;
+  border-radius: 4px;
+  background: #4a69a4;
+}
+.content-box .submit_div button:hover {
+  background: #4e5a7a;
+}
+.content-box .submit_div button:active {
+  background: #4e5a7a;
+}

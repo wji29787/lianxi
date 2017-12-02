@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal
+}
+
+
+/*清楚滚动条*/
+
+.layui-layer-content {
+  overflow: hidden !important;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.cl:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.text-overflow1 {
+  min-width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: 微软雅黑;
+  overflow: hidden;
+}
+
+.mAuto {
+  width: 15.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*点播的背景*/
+
+.dianbo-main {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #06152c;
+  background-size: 100% 100%;
+  background-image: url(../images/body_bg.png);
+  background-repeat: no-repeat;
+}
+
+.dianbo-header-box {
+  padding: 0.60rem;
+  height: 0.71rem;
+}
+
+.dianbo-header-box-h1 {
+  position: relative;
+  padding-left: 1.05rem;
+  font-family: 黑体;
+  line-height: 0.71rem;
+  font-size: 0.66rem;
+  color: #2fe3fb;
+}
+
+.dianbo-header-box-h1:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.71rem;
+  height: 0.71rem;
+  background: url(../images/icon.png) no-repeat -4.21rem -5.21rem;
+  background-size: 10.93rem 6.13rem;
+}
+
+
+/*类别切换*/
+
+.dianbo-nav-box {
+  display: flex;
+}
+
+.dianbo-nav-content {
+  position: relative;
+  flex: 1;
+  height: 0.66rem;
+  overflow: hidden;
+}
+
+.dianbo-nav-content:after {
+  content: '';
+  position: absolute;
+  width: 0.80rem;
+  height: 0.62rem;
+  opacity: 0.3;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+
+.dianbo-nav-ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0.62rem;
+  width: 8888rem;
+}
+
+.dianbo-nav-box li {
+  position: relative;
+  float: left;
+  margin-right: 0.38rem;
+  padding-left: 0.43rem;
+  width: 1.55rem;
+  height: 0.62rem;
+  line-height: 0.62rem;
+  font-size: 0.36rem;
+  color: #bbf7ff;
+  min-width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.dianbo-nav-box li.active {
+  color: #fffe8a;
+}
+
+.dianbo-nav-box li:last-child {
+  margin-right: 0;
+}
+
+.dianbo-nav-box li.active:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.04rem;
+  width: 100%;
+  height: 0.04rem;
+  background: url(../images/shipindianbo_nav.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.dianbo-nav-box li.active:before, .dianbo-nav-box li:hover:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  width: 0.36rem;
+  height: 0.38rem;
+}
+
+.dianbo-nav-box li.active:before {
+  background: url(../images/icon.png) no-repeat;
+  background-position: -8.52rem -2.49rem !important;
+  background-size: 10.93rem 6.13rem;
+}
+
+.dianbo-nav-box li:hover:before {
+  background: url(../images/icon.png) no-repeat -8.52rem -1.8rem;
+  background-size: 10.93rem 6.13rem;
+}
+
+.dianbo-nav-op {
+  width: 0.80rem;
+  overflow: hidden;
+}
+
+.dianbo-nav-op i {
+  float: left;
+  width: 0.30rem;
+  height: 0.62rem;
+  line-height: 0.62rem;
+  text-align: center;
+  font-size: 0.20rem;
+  color: #fff;
+  background: url(../images/icon_arrow1.png) no-repeat;
+  background-size: 2rem 0.5rem;
+  cursor: pointer;
+}
+
+
+/** 左按钮 **/
+
+.dianbo-nav-op .op-l {
+  margin-right: 0.20rem;
+  background-position: -0.6rem 0.05rem;
+}
+
+
+/** 右按钮往左走 **/
+
+.dianbo-nav-op .op-r {
+  background-position: -0.10rem 0.05rem;
+}
+
+.dianbo-nav-op .op-l:hover {
+  background-position: -1.61rem 0.05rem;
+}
+
+.dianbo-nav-op .op-r:hover {
+  background-position: -1.11rem 0.05rem;
+}
+
+
+/*类别切换对应的内容区域*/
+
+.dianbo-con-box {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: 0.55rem;
+  width: 15.8rem;
+  height: calc(100% - 1.91rem - 0.66rem);
+}
+
+.dianbo-con-type-box {
+  padding: 0 0.15rem;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.dianbo-con-type {
+  height: 100%;
+}
+
+.dianbo-con-item {
+  float: left;
+  margin-right: 0.80rem;
+  margin-bottom: 0.60rem;
+  width: 7.35rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.dianbo-con-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.dianbo-con-item .img {
+  float: left;
+  width: 3.89rem;
+  height: 2.70rem;
+  background: url(../images/shipindianbo_bg_normal.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.dianbo-con-item:hover .img, .dianbo-con-item .img:focus {
+  outline: none;
+  background-image: url(../images/shipindianbo_bg_click.png);
+}
+
+.dianbo-con-item img {
+  margin: 0.27rem auto 0;
+  display: block;
+  width: 3.29rem;
+  height: 2.11rem;
+}
+
+.dianbo-con-item .msg {
+  float: right;
+  width: 3rem;
+}
+
+.dianbo-con-item h3 {
+  padding-top: 0.05rem;
+  line-height: 1.15rem;
+  font-size: 0.36rem;
+  color: #bbf7ff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*.dianbo-con-item:hover h3, .dianbo-con-item:hover .ms {
+    color: #e5e980;
+}*/
+
+.dianbo-con-item .time {
+  position: relative;
+  padding-left: 0.45rem;
+  line-height: 0.69rem;
+  font-size: 0.24rem;
+  color: #2fe3fb;
+}
+
+.dianbo-con-item .time:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.17rem;
+  width: 0.34rem;
+  height: 0.34rem;
+  background: url(../images/icon.png) no-repeat -9.29rem -2.51rem;
+  background-size: 10.93rem 6.13rem;
+}
+
+.dianbo-con-item .ms {
+  overflow: hidden;
+  height: 0.50rem;
+  line-height: 0.50rem;
+  color: #bbf7ff;
+  font-size: 0.28rem;
+}
+
+.dianbo-con-item .ms span {
+  float: left;
+}
+
+.dianbo-con-item .ms span:first-child {
+  width: 1.20rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.dianbo-con-item .date {
+  padding-left: 0.24rem;
+}
+
+/**弹层播放样式**/
+.zlayer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #0d1931;
+}
+
+.zlayer-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+.zlayer-title, .zlayer-txt, .zlayer-close {
+  display: block;
+}
+
+.zlayer-title {
+  height: 100%;
+  font-size: 0.22rem;
+  padding-left: 0.43rem;
+}
+
+.zlayer-txt {
+  height: 100%;
+  flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 0.22rem;
+  text-align: center;
+}
+
+.zlayer-close {
+  height: 100%;
+  font-size: 0.22rem;
+  padding-left: 0.18rem;
+}
+
+.zlayer-close i {
+  display: block;
+  width: 0.6rem;
+  height: 100%;
+  font-style: normal;
+  text-align: center;
+  cursor: pointer;
+}
+
+.zlayer-main {
+  width: 100%;
+  height: 100%;
+}
+
+.zlayer-main .layer-video {
+  width: 100%;
+  height: 100%;
+  background: #171717;
+}

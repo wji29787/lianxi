@@ -1,0 +1,120 @@
+@rem: 100rem;
+i
+{
+    font-style: normal;
+}
+.content-box
+{
+	overflow-y: auto;
+     dl
+     {
+         width: 100%;
+
+     }
+     font-size: 20/@rem;
+     dt
+     {
+           height: 66/@rem;
+           width: 100%;
+           color: #eef5ff;
+           position: relative;
+           display:table-cell; 
+           vertical-align:bottom;
+           padding-left: 14/@rem;
+           .der-line
+           {
+                position: absolute;
+                left: 0;
+                bottom:-6px;
+                width: 180/@rem;
+                height: 1px;
+                border-bottom: 1px solid #717fa5;
+           }
+     }
+     dd
+     {
+         float: left;
+         width:760/@rem ;
+         height: 104/@rem;
+         box-sizing: border-box;
+       	 color: #eef5ff;
+         line-height: 110/@rem;
+         i,span
+         {
+              display: inline-block; 
+         }
+         i
+         {
+             width: 230/@rem;
+             text-align: right;
+         }
+         span
+         {
+             width: 520/@rem;
+             box-sizing: border-box;
+             padding-left: 28/@rem;
+         }
+         input
+         {
+             height: 36/@rem;
+             width: 396/@rem;
+             padding-left: 6px;
+             border: 0.01rem solid #4a69a4;
+  			 background-color: #172449;
+  			 color: #eef5ff;
+             border-radius: 4px;
+             margin-right: 20/@rem;
+         }
+         select{
+             height: 36/@rem;
+             width: 396/@rem;
+             padding-left: 6px;
+             border: 0.01rem solid #4a69a4;
+  			 background-color: #172449;
+  			 color: #eef5ff;
+             border-radius: 4px;
+             margin-right: 20/@rem;
+             cursor:pointer;
+         }
+         .fi
+         {
+             display: inline-block;
+             font-size: 24/@rem;
+             width: 52/@rem;
+             height: 36/@rem;
+             cursor: pointer;
+         }
+         .icon-kai
+         {
+              color: #4a69a4;
+         }
+        .icon-guan
+        {
+             color:#CCCCCC
+        }
+     }
+     .submit_div
+     {
+          text-align: center;
+          padding-top:50/@rem;
+          button
+          {
+               cursor:pointer;
+               width: 130/@rem;
+               height: 36/@rem;
+               border: none;
+               color: #FFFFFF;
+               font-size: 20/@rem;
+               text-align: center;
+               line-height:36/@rem;
+               border-radius: 4px;
+               background: #4a69a4;
+               &:hover{
+                 background: #4e5a7a;
+               };
+               &:active{
+                 background: #4e5a7a;
+               };
+          }
+     }
+}

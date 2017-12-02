@@ -1,0 +1,104 @@
+/* 媒体文件 */
+.pl60 {
+  padding-left: 0.6rem !important;
+}
+.layer-warp .layer-right dl dd {
+  margin-bottom: 0.2rem !important;
+}
+.ti0 dd {
+  text-indent: 0 !important;
+  margin-right: 0.3rem;
+}
+.content-list-thead-tab {
+  height: 0.6rem;
+  line-height: 0.6rem;
+}
+.content-list-thead-tab .content-list-thead-all {
+  float: left;
+}
+.content-list-thead-tab .content-list-thead-all {
+  float: left;
+  font-size: .21rem;
+  color: #e4ebf5;
+}
+.z-icon-box {
+  float: left;
+  width: 0.6rem;
+  text-align: center;
+  cursor: pointer;
+}
+.z-icon-box.z-h140 {
+  line-height: 1.39rem;
+}
+.z-icon-box .icon-weixuanzhong {
+  font-size: 0.32rem;
+  color: #4968a2;
+}
+.z-icon-box .icon-xuanzhong {
+  font-size: 0.32rem;
+  color: #4a69a4;
+}
+.bottom-box .content-box .content-list.content-list-tbody dl .c-check-icon {
+  top: 0.57rem;
+}
+.bottom-box .content-box .content-list.content-list-tbody dl dd {
+  padding: 0.58rem 0 0.58rem 0;
+}
+.bottom-box .content-box .content-list dl {
+  /*padding-left:0.60rem;*/
+}
+.bottom-box .content-box .content-list dl dd {
+  margin-right: 0.3rem;
+}
+.bottom-box .content-box .content-list dl dd.list-state,
+.bottom-box .content-box .content-list dl dd.list-from {
+  width: 1.1rem;
+}
+.bottom-box .content-box .content-list dl dd.list-first {
+  width: 4.54rem;
+}
+.bottom-box .content-box .content-list dl dd.list-first.list-img-box {
+  width: 2.74rem;
+  padding-left: 1.8rem;
+}
+.bottom-box .content-box .content-list dl dd.list-first.list-img-box .list-oimg {
+  position: absolute;
+  top: 0.24rem;
+  left: 0;
+}
+.bottom-box .content-box .content-list dl dd.list-first.list-img-box .list-oimg img {
+  display: block;
+  width: 1.60rem;
+  height: 0.90rem;
+}
+.bottom-box .content-box .content-list dl dd.list-second {
+  width: 2.50rem;
+}
+.bottom-box .content-box .content-list dl dd.list-second em {
+  font-size: 0.25rem;
+  padding-left: 0.05rem;
+}
+.bottom-box .content-box .content-list dl dd.list-third {
+  width: 1.50rem;
+}
+.bottom-box .content-box .content-list dl dd.list-four {
+  width: 1.14rem;
+}
+.bottom-box .content-box .content-list dl dd.list-fifth {
+  width: 2.2rem;
+}
+.bottom-box .content-box .content-list dl dd a.delete-a {
+  color: #f53838;
+}
+.bottom-box .content-box .content-list dl dd a.edit-a {
+  height: 0.22rem;
+  margin-top: 0.02rem;
+  color: #7b6dfd;
+}
+.bottom-box .content-box .content-list dl dd a.play-a {
+  color: #5ac15f;
+}
+.bottom-box .content-box .content-list dl dd a.download-a {
+  height: 0.24rem;
+  color: #c343e5;
+}

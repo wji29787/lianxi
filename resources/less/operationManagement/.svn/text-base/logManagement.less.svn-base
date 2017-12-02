@@ -1,0 +1,36 @@
+/* 日志管理 */
+.content-list{
+  dl{
+      padding-left:0.80rem;
+      dd{
+       /*padding-right:0.20rem;*/
+        &.list-first{
+          width:2.58rem;
+        };
+        &.list-second{
+          width:3.52rem;
+          em{
+          	font-size:0.25rem;
+          	padding-left:0.05rem;
+         }
+        };
+        &.list-third{
+         width:2.62rem;
+        };
+        &.list-four{
+         width:2.38rem;
+        };
+        &.list-fifth{
+         width:3.5rem;
+        };
+      }
+     }
+}
+
+.content-box .content-list.content-list-tbody{
+	height:calc(100% - 0.62rem - 0.97rem) !important;	
+}
+
+#deviceManagement .content-list-thead dl dd{
+	text-indent:0;
+}

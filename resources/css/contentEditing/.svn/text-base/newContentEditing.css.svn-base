@@ -1,0 +1,608 @@
+[v-cloak] {
+  display: none;
+}
+
+.header-box {
+  background-image: url(../../images/bg_nav_2.png?1) !important;
+}
+/** 内容编辑右侧内容区域 **/
+
+.comm-nav-list .list-input{
+	display:block;
+}
+
+/** 头部3个input和应用结构 **/
+.edit-content-top{
+	padding-top:0.29rem;
+	height:0.66rem;
+	border-bottom:0.01rem solid #374569;
+}
+
+.edit-content-top-input label{
+	float:left;
+	font-size:0.24rem;
+	color:#fff;
+}
+
+.edit-content-top-input input{
+	float:left;
+	margin:0 0.5rem 0 0.2rem;
+	padding:0 0.12rem;
+	box-sizing:border-box;
+	width:2.8rem;
+	height:0.38rem;
+	line-height:0.38rem;
+	font-size:0.16rem;
+	color:#fff;
+	border:1px solid #4a69a4;
+	border-radius:0.04rem;
+	background-color:#172449;
+}
+
+.edit-content-top-btn button{
+	width:1.28rem;
+}
+
+.content-box{
+	height:100%;
+}
+
+/** 包含tab滚动内容区域 **/
+.edit-content-bottom{
+	display:flex;
+	height:calc(100% - 0.96rem);
+}
+
+/**标签列表盒子**/
+.edit-content-bottom-tabs{
+	box-sizing:border-box;
+	position:relative;
+	padding-top:0.58rem;
+	height:100%;
+	width:2.3rem;
+}
+
+/** tab结构 **/
+.bottom-tabs-list-box{
+	box-sizing:border-box;
+	padding:0.12rem 0.26rem 0 0.17rem;
+	width:100%;
+	height:calc(100% - 0.5rem);
+	background:url(../../images/edit_tabs_bg2.png) no-repeat;
+	background-size:100% 100%;
+}
+
+.bottom-tabs-list{
+	overflow-y:auto;
+	height:100%;
+}
+
+.bottom-tabs-list li{
+    position:relative;
+	height:0.6rem;
+	border-bottom:0.01rem solid #374569;
+	cursor:pointer;
+	text-align:center;
+	overflow:hidden;
+}
+
+.bottom-tabs-list li:hover:before,.bottom-tabs-list li.active:before,.bottom-tabs-list li:hover:after,.bottom-tabs-list li.active:after{
+	content:'';
+	position:absolute;
+	top:50%;
+	margin-top:-0.1rem;
+	width:0.12rem;
+	height:0.2rem;
+	background-image:url(../../images/edit-tabs-arrow.png);
+	background-repeat:no-repeat;
+}
+
+.bottom-tabs-list li.active:before{
+	left:0.1rem;
+	background-position: -17px -9px !important;
+}
+
+.bottom-tabs-list li.active:after{
+	right:0.1rem;
+	background-position: -42px -9px !important;
+}
+
+.bottom-tabs-list li:hover:before{
+	left:0.1rem;
+	background-position: -67px -9px;
+}
+
+.bottom-tabs-list li:hover:after{
+	right:0.1rem;
+	background-position: -92px -9px;
+}
+
+/**tab内容编辑结构**/                             
+.bottom-tabs-list li span{
+	display:block;
+	display:-none;
+	line-height:0.6rem;
+	padding:0 0.34rem;
+	font-size:0.2rem;
+	color:#fff;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+
+
+.bottom-tabs-list input{
+	margin-top:0.09rem;
+	padding:0 0.12rem;
+	width:69%;
+	height: 0.4rem;
+    line-height: 0.4rem;
+    border: 0;
+    border-radius: 0.05rem;
+    font-size: 0.2rem;
+}
+
+/** tab对应的操作结构 **/
+.bottom-tabs-op{
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:100%;
+	height:0.5rem;
+	font-size:0;
+	text-align:right;
+	overflow:hidden;
+}
+
+.bottom-tabs-op i{
+	display:inline-block;
+	margin-right:0.16rem;
+	margin-top:0.11rem;
+	width:0.44rem;
+	height:0.28rem;
+	line-height:0.28rem;
+	text-align:center;
+	color:#fff;
+	background-color:#4a69a4;
+	border-radius:2px;
+	cursor:pointer;
+}
+
+.bottom-tabs-op i:hover{
+	background-color: #7582a4;
+}
+
+/** 和tab同级的右边内容区域 **/
+.edit-content-botom-content{
+	flex:1;
+	box-sizing:border-box;
+	padding-top:0.24rem;
+}
+
+/** 内容结构 **/
+.botom-content-list{
+	height:98%;
+	overflow-y: auto;
+}
+
+.botom-content-list-add{
+	float:left;
+	margin-left:0.19rem;
+	margin-bottom:0.3rem;
+	padding:0.34rem 0.39rem 0;
+	width:2.4rem;
+	height:2rem;
+	cursor:pointer;
+}
+
+/**循环项目**/
+.botom-content-list-item{
+	position:relative;
+	float:left;
+	margin-left:0.16rem;
+	margin-bottom:0.3rem;
+	padding:0.34rem 0.39rem 0;
+	width:2.4rem;
+	height:2rem;
+	cursor:pointer;
+}
+
+.botom-content-list-item:hover{
+	box-shadow: 0 0 0.35rem #7fdbfd inset;
+}
+
+.botom-content-list-info img{
+	display:block;
+	width:2.4rem;
+	height:1.35rem;
+	color:#fff;
+}
+
+.botom-content-list-info h3{
+	height:0.63rem;
+	line-height:0.63rem;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	font-size:0.22rem;
+	text-align:center;
+	color:#fff;
+	overflow:hidden;
+}
+
+/** 新增按钮  **/
+.botom-content-list-add:after{
+	content:'+';
+	display:block;
+	height:1.35rem;
+	background-color:#1a284b;
+	font-size:0.65rem;
+	text-align:center;
+	line-height:1.35rem;
+	color:#fff;
+}
+
+/** 删除按钮 **/
+.botom-content-list-delete{
+	display:none;
+	position:absolute;
+	right:0;
+	top:0;
+	width:0.26rem;
+	height:0.26rem;
+	box-shadow: 0 0 0.05rem #7fdbfd inset;
+}
+
+
+.botom-content-list-item:hover .botom-content-list-delete{
+	display:block;
+}
+
+.botom-content-list-delete:before{
+    content: "";
+    position: absolute;
+    left:12px;
+   	top:3px;
+    width: 2px;
+    height: 18px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+	
+}
+
+.botom-content-list-delete:after{
+   	content: "";
+    position: absolute;
+    left:12px;
+   	top:3px;
+    width: 2px;
+    height: 18px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+	
+}
+
+/** 保存按钮 **/
+/** .botom-content-save{
+	height:0.88rem;
+	text-align:center;
+}
+
+.botom-content-save button{
+	margin-top: 0.15rem;
+	width:1.88rem;
+} **/
+
+/**内容区域**/
+.resource-layer-bottom{
+	padding:0 0.24rem;
+}
+.comm-layer-bottom{
+	padding:0 0.25rem;
+	overflow:hidden;
+}
+
+.layer-bottom-top{
+	display:flex;
+	justify-content:space-between;
+	margin-top:0.07rem;
+	height:0.6rem;
+	overflow:hidden;
+}
+
+.layer-bottom-tab{
+    display:flex;
+    height:0.59rem;
+    line-height:0.59rem;
+    border-bottom:1px solid #4f608d;
+	oveflow:hidden;
+}
+
+.layer-bottom-tab li{
+    position:relative;
+	width:1.94rem;
+	text-align:center;
+	color:#fff;
+	font-size:0.22rem;
+	cursor:pointer;
+}
+
+.layer-bottom-tab li.active,.layer-bottom-tab li:hover{
+	color:#7fdbfd;
+}
+
+.layer-bottom-tab li.active:after,.layer-bottom-tab li:hover:after{
+	content:'';
+	position:absolute;
+	left:0;
+	bottom:-0.01rem;
+	width:100%;
+	height:0.02rem;
+	background-color:#7fdbfd;
+}
+
+.layer-bottom-search{
+	overflow:hidden;
+	margin-top:0.22rem;
+	margin-right:0.2rem;
+}
+
+.layer-bottom-search-input{
+	float:left;
+	box-sizing:border-box;
+	padding:0 0.12rem;
+	width:2.69rem;
+	height:0.38rem;
+	line-height:0.38rem;
+	font-size:0.18rem;
+	border:0.01rem solid #4a69a4;
+	border-right:none;
+	border-radius:0.04rem 0 0 0.04rem;
+	background:none;
+	color:#fff;
+}
+
+.layer-bottom-search-btn{
+	float:left;
+	width:0.41rem;
+	height:0.38rem;
+	line-height:0.38rem;
+	font-size:0.20rem;
+	text-align:center;
+	border-radius:0 0.04rem 0.04rem 0;
+	background-color:#4a69a4;
+	color:#fff;
+	cursor:pointer;
+}
+
+.layer-bottom-search-btn:hover{
+	background-color:#4e5a7a;
+}
+
+.layer-bottom-content{
+	padding-top:0.15rem;
+}
+
+.layer-bottom-full{
+	overflow:hidden;
+	height:0.52rem;
+}
+
+.layer-bottom-full i{
+	float:left;
+	width:0.6rem;
+	height:0.52rem;
+	line-height:0.52rem;
+	text-align:center;
+	font-size:0.3rem;
+	color:#4867a1;
+	cursor:pointer;
+}
+
+.layer-bottom-full span{
+	float:left;
+	line-height:0.52rem;
+	font-size:0.22rem;
+	color:#fff;
+}
+
+.layer-bottom-head{
+    display:flex;
+    padding-left:0.6rem;
+	height:0.46rem;
+	line-height:0.46rem;
+	border-bottom:1px solid #374569;
+	color:#fff;
+}
+
+.layer-bottom-head span{
+	display:block;
+	box-sizing:border-box;
+	padding-right:0.12rem;
+	font-size:0.22rem;
+}
+
+.layer-bottom-cell-name{
+	width:3.56rem;
+}
+
+.layer-bottom-cell-stime{
+	width:3.1rem;
+}
+
+.layer-bottom-cell-suser{
+	width:1.97rem;
+}
+
+.layer-bottom-cell-time{
+	width:1.36rem;
+}
+
+.layer-bottom-body{
+	height:4.5rem;
+	overflow-y:auto;
+}
+
+.layer-bottom-body .body-list{
+	display:flex;
+	padding:0.2rem 0;
+	height:0.7rem;
+	line-height:0.7rem;
+	font-size:0.22rem;
+	border-bottom:0.01rem solid #374569;
+	color:#fff;
+}
+
+.layer-bottom-body .body-list:hover{
+	box-shadow: 0 0 0.2rem #7fdbfd inset;
+}
+
+.layer-bottom-cell-radio{
+	width:0.6rem;
+	text-align:center;
+}
+
+.layer-bottom-cell-radio i{
+	font-size:0.3rem;
+	color:#4a69a4;
+	cursor:pointer;
+}
+
+.body-list-img{
+	display:flex;
+}
+
+.body-list-img img{
+	display:block;
+	margin-right:0.2rem;
+	width:1.24rem;
+	height:0.7rem;
+    vertical-align: middle;
+}
+
+.body-list-img span{
+	display:block;
+	padding:0 0.12rem;
+}
+
+.layer-bottom-add{
+	padding:0.25rem 0;
+	text-align:center;
+}
+
+.layer-bottom-add button{
+	width:1.88rem;
+	height:0.38rem;
+	line-height:0.38rem;
+	font-size:0.2rem;
+	color:#fff;
+	text-align:center;
+	border:none;
+	background-color:#4a69a4;
+	border-radius:0.04rem;
+	cursor:pointer;
+}
+
+.layer-bottom-add button:hover{
+	background-color:#4e5a7a;
+}
+
+
+/**皮肤选择弹层**/
+.theme-box{
+	width:12rem;
+}
+
+.theme-ul{
+	padding:0.4rem 0 0 0.3rem;
+	overflow:hidden;
+}
+
+.theme-ul li{
+	position:relative;
+	float:left;
+	margin-right:0.24rem;
+	width:5.58rem;
+	height:3.48rem;
+	border:0.01rem solid #2a5b7d;
+	border-radius:0.04rem;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+.theme-ul li img{
+	width:100%;
+	height:100%;
+}
+
+.theme-ul li:hover:after,.theme-ul li.active:after{
+	content:'';
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	position:absolute;
+    box-shadow: 0 0 0.35rem #6dbdde inset;
+}
+
+.theme-op{
+	padding:0.35rem 0;
+	text-align:center;
+}
+
+.theme-op .sham-btn{
+	width:1.28rem;
+}
+
+.theme-op .sham-btn:first-child{
+	margin-right:1.7rem;
+}
+
+/**新增删除弹窗**/
+.add-delete{
+	width:6rem;
+	padding-top:0.12rem;
+}
+
+.add-delete-input{
+	margin: 0.2rem 0;
+    text-align: center;
+}
+
+.add-delete-input input{
+    padding:0 0.12rem;
+	width:80%;
+	height: 0.38rem;
+    line-height: 0.36rem;
+    font-size: 0.18rem;
+    color: #cdd8f8;
+    background-color: #18264f;
+    border: 0.01rem solid #4f608d;
+}
+
+.add-delete-op{
+	padding: 0.25rem 0;
+    text-align: center;
+}
+
+.add-delete-op button{
+	width:1.28rem;
+}
+
+.add-delete-op .sham-btn:first-child {
+    margin-right: 1.7rem;
+ }
+ 
+ .add-delete-txt{
+ 	font-size:0.2rem;
+ 	color:#fff;
+ 	text-align:center;
+ 	line-height:0.6rem;
+ }

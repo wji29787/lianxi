@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal
+}
+
+
+/*清楚滚动条*/
+
+.layui-layer-content {
+  overflow: hidden !important;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.text-overflow1 {
+  min-width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cl:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: 微软雅黑;
+  overflow: hidden;
+}
+
+.mAuto {
+  width: 15.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*点播的背景*/
+
+.dianbo-main {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #06152c;
+  background-size: 100% 100%;
+  background-image: url(../images/body_bg.png);
+  background-repeat: no-repeat;
+}
+
+.dianbo-header-box {
+  padding: 0.6rem;
+  height: 0.71rem;
+}
+
+.dianbo-header-box-h1 {
+  position: relative;
+  padding-left: 1.05rem;
+  font-family: 黑体;
+  line-height: 0.71rem;
+  font-size: 0.66rem;
+  color: #2fe3fb;
+}
+
+.dianbo-header-box-h1:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.71rem;
+  height: 0.71rem;
+  background: url(../images/icon.png) no-repeat -4.21rem -5.21rem;
+  background-size: 10.93rem 6.13rem;
+}
+
+
+/*类别切换*/
+
+.dianbo-content-box {
+  margin: 0 auto;
+  width: 15.5rem;
+  height: calc(100% - 1.91rem);
+  overflow-y: auto;
+}
+
+.c-item {
+  overflow: hidden;
+}
+
+.c-item-title {
+  position: relative;
+  margin-right: 0.38rem;
+  padding-left: 0.43rem;
+  height: 0.62rem;
+  line-height: 0.62rem;
+  font-size: 0.36rem;
+  color: #bbf7ff;
+  cursor: pointer;
+}
+
+.c-item-title:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  width: 0.36rem;
+  height: 0.38rem;
+  background: url(../images/icon.png) no-repeat -8.52rem -1.8rem;
+  background-size: 10.93rem 6.13rem;
+}
+
+.c-item-content {
+  margin-top: 0.12rem;
+  display: flex;
+}
+
+.arrow-left, .arrow-right {
+  display: block;
+  width: 0.7rem;
+  height: 2.7rem;
+  background-image: url(../images/icon_arrow1.png);
+  background-repeat: no-repeat;
+  background-size: 2rem 0.5rem;
+  cursor: pointer;
+}
+
+.arrow-left {
+  background-position: -0.4rem 1rem;
+}
+
+.arrow-right {
+  background-position: 0.1rem 1rem;
+}
+
+.arrow-left:hover {
+  background-position: -1.41rem 1rem;
+}
+
+.arrow-right:hover {
+  background-position: -0.91rem 1rem;
+}
+
+.c-item-center {
+  flex: 1;
+  overflow: hidden;
+}
+
+.c-item-center-ul {
+  width: 9999px;
+}
+
+.c-item-center li {
+  float: left;
+  width: 3.89rem;
+  margin-right: 1.2rem;
+  cursor: pointer;
+}
+
+.c-item-center li:last-child {
+  margin-right: 0;
+}
+
+.c-item-center li .img {
+  overflow: hidden;
+  height: 2.70rem;
+  background: url(../images/shipindianbo_bg_normal.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.c-item-center li .img:hover, .c-item-center li .img:focus {
+  outline: none;
+  background-image: url(../images/shipindianbo_bg_click.png);
+}
+
+.c-item-center li img {
+  margin: 0.27rem auto 0;
+  display: block;
+  width: 3.29rem;
+  height: 2.11rem;
+}
+
+.c-item-center .txt {
+  padding: 0 0.12rem;
+  font-size: 0.3rem;
+  line-height: 0.8rem;
+  color: #bbf7ff;
+  text-align: center;
+}
+
+
+/**弹层播放样式**/
+
+.zlayer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #0d1931;
+}
+
+.zlayer-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+.zlayer-title, .zlayer-txt, .zlayer-close {
+  display: block;
+}
+
+.zlayer-title {
+  height: 100%;
+  font-size: 0.22rem;
+  padding-left: 0.43rem;
+}
+
+.zlayer-txt {
+  height: 100%;
+  flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 0.22rem;
+  text-align: center;
+}
+
+.zlayer-close {
+  height: 100%;
+  font-size: 0.22rem;
+  padding-left: 0.18rem;
+}
+
+.zlayer-close i {
+  display: block;
+  width: 0.6rem;
+  height: 100%;
+  font-style: normal;
+  text-align: center;
+  cursor: pointer;
+}
+
+.zlayer-main {
+  width: 100%;
+  height: 100%;
+}
+
+.zlayer-main .layer-video {
+  width: 100%;
+  height: 100%;
+  background: #171717;
+}

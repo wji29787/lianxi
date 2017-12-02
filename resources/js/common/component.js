@@ -1,0 +1,47 @@
+Vue.component(
+    'nav-cloudspase',
+    {
+        props: ['message'],
+        mounted: function () {
+            // this.classA = '';
+            // this.classB = '';
+            // this.classC = '';
+            // this.classD = '';
+            switch (this.message) {
+                case '1':
+                    this.classA = 'active';
+                    break;
+                case '2':
+                    this.classB = 'active';
+                    break;
+                case '3':
+                    this.classC = 'active';
+                    break;
+                case '4':
+                    this.classD = 'active';
+                    break;
+            }
+            ;
+        },
+        template: `
+        <ul class="nav-level-one">
+           <li><a href="javascript:;" @click="redirect(\'cloudResources/cloudSpace/cloudSpace.do\')" :class="classA" ><i class="fl iconfont icon-yunduo" ></i>云空间</a></li>
+           <li><a href="javascript:;" :class="classB" @click="redirect(\'cloudResources/thirdMaterialUpload/getFileResource.do\')"><i class="fl iconfont icon-shishizhuanma"></i>文件资源</a></li>
+           <li><a href="javascript:;" :class="classD" @click="redirect(\' cloudResources/thirdMaterial/getThirdMaterial.do\')"><i class="fl iconfont icon-folderwenjianjia"></i>测试添加</a></li>
+           <li><a href="javascript:;" :class="classC" @click="redirect(\'personalResources/recoveryResources/recycleBin.do\')"><i class="fl iconfont icon-iconfontshanchu"></i>测试云端资源</a></li>
+        </ul>
+        `,
+        data: function () {
+            return {
+                classA: '',
+                classB: '',
+                classC: '',
+                classD: ''
+            };
+        },
+        methods: {
+            redirect: function (url) {
+                window.location = home_path + url;
+            }
+        }
+    });

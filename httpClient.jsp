@@ -91,7 +91,7 @@
 		<div id="allSubtitleContent">
 			<a href="javascript:;" class="addBtn" onclick="addDom()">添加</a>
 			<div class="singleAdd">
-				<label>推送字幕</label><input type="text" id="subtitle_name" class="subtitleName" maxlength="100">
+				<label>推送字幕</label><input type="text" id="subtitle_name" class="subtitleName" maxlength="10">
 				<!-- <label>字幕内容</label> -->
 				<!-- <input type="text" id="subtitle_content" class="subtitleContent"> -->
 				<label>字幕时长</label><input type="text" id="subtitle_time" class="subtitleTime" maxlength="5">
@@ -112,10 +112,6 @@
 		var singleNum = 0; //自增值
 		var judag = false;
 			function set() {
-			if(judag == true){
-				return
-			}
-			judag = true;
 				var jsonDataList = []; //paramDate MeetPerson中的字幕数据
 				var serverIp = $("#server_ip").val(); //ip
 				var serverPort = $("#server_port").val(); //端口
@@ -124,8 +120,10 @@
 				var displayMethod = $("#display_method").val(); //显示方式\
 				var subtitleTime = $("#subtitle_time").val(); //显示方式
 				var refuserNum=/^[0-9]+$/; //判断字幕时长为数字
+				//验证字幕信息的长度和是否为数字
 				if($.trim(subtitleTime) == ""){
 					alert("第一组字幕信息的时长为必填");
+					subtitleTime = $("#subtitle_time").val('');
 					return;
 				}else{
 	    		   	if(subtitleTime&&!refuserNum.test(subtitleTime)){
@@ -137,7 +135,7 @@
 					}
 				}
 
-				
+				//获取所有的字幕时长信息
 				var allContent = $(".singleAdd");
 				var panduan = false;
 				//遍历每组数据  组成数组
@@ -174,10 +172,15 @@
 						SubtitleContent: thisName, //字幕名称
 						//PersonContent: thisContent, //字幕内容
 					};
-					jsonDataList.push(sendData); //组成数组
+					jsonDataList.push(sendData); //把所有的信息组成数组
 					
 				});
 				
+				
+				
+				
+				
+				//如果信息有误 不执行以下代码
 				if(panduan == true){
 					return;
 				}
@@ -198,6 +201,7 @@
 				
 				paramList = JSON.stringify(paramList);//将字幕信息转换成字符串
 				
+				
 				//要上传的数据对象
 				var params = {
 					serverIp:serverIp,  //ip
@@ -205,6 +209,14 @@
 					paramDate:paramList //字幕内容
 				};
 				console.log(params.paramDate)
+				sendjAjaxData(params);
+			}
+			//发送信息是否成功
+			function sendjAjaxData(params){
+				if(judag == true){
+					return
+				}
+				judag = true;
 				$.ajax({
 					type: 'post',
 					data: params,
@@ -228,9 +240,7 @@
 						judag = false;
 					}
 				});
-				
 			}
-			
 			function filter(value){
 				var text;
 				switch(value){
@@ -271,7 +281,7 @@
 			function addDom(){
 				var content="<div class='singleAdd'>";
 				content +=	"<label>推送字幕</label>";
-				content +=	"<input type='text' class='subtitleName' maxlength=\"100\">";
+				content +=	"<input type='text' class='subtitleName' maxlength=\"10\">";
 				/* content +=	"<label>字幕内容</label>";
 				content +=	"<input type='text' class='subtitleContent'>"; */
 				content +=	"<label>字幕时长</label>";

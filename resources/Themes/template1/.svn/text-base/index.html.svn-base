@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index.html</title>
+
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/video.css" />
+    <script src="js/jquery2.2.4.min.js"></script>
+    <script src="layer/layer.js"></script>
+    <script src="jwplayer/jwplayer.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="../publish_data/navigate.json"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="dianbo-main">
+	    <!--H1部分-->
+	    <div class="dianbo-header-box mAuto">
+	        <h1 class="dianbo-header-box-h1">视频点播远程培训</h1>
+	    </div>
+
+	   <!--类别部分-->
+	    <div class="dianbo-nav-box mAuto cl">
+	    	<div class="dianbo-nav-content">
+		        <ul class="cl dianbo-nav-ul" id="dianbo-nav-ul">
+		            <!-- <li class="active" data-type="1">江西会议</li> -->
+		        </ul>
+	        </div>
+	        <div class="dianbo-nav-op"><i id="op-l" class="op-l"></i><i id="op-r" class="op-r"></i></div>
+	    </div>
+
+	    <!--内容部分-->
+	    <div  class="dianbo-con-box">
+          <div class="dianbo-con-type-box">
+  	        <!--每个类别对应的模块-->
+    	       <!--  <div class="dianbo-con-type cl" id="dianbo-con-type">
+
+    	            <div class="dianbo-con-item" data-src="video/dianbo1.flv">
+    	                <div class="img">
+    	                    <img src="images/001_03.jpg" alt="">
+    	                </div>
+    	                <div class="msg">
+    	                    <h3>这是会议1</h3>
+    	                    <p class="time">02:08:45</p>
+    	                    <div class="ms"><span>王小贱</span><span class="date">2017/03/03</span></div>
+    	                </div>
+    	            </div>
+              </div> -->
+          </div>
+	    </div>
+	</div>
+  </body>
+</html>

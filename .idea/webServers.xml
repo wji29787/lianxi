@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="019fe7d2-06a7-468e-885c-0c6a61a66405" name="cms" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="D:\job\apache\apache-tomcat-7.0.72\webapps\cms" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

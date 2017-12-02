@@ -1,0 +1,449 @@
+/* 用户管理 */
+@width:19.2rem;
+@height:10.8rem;
+@bgcolor:#4a69a4;/*背景色*/
+@hoverbgColor:#4e5a7a;/*hover的颜色*/
+@activebgColor:#4e5a7a;
+@fontSize:0.2rem;
+@radius:0.04rem;/*圆角大小*/
+/*128 38*/
+/*弹性属性设置*/
+.display(){
+  display: -ms-box;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: box;
+  display: flexbox;
+  display: flex;
+}
+/*弹性值设置*/
+.flex(@flex:1){
+  display: inline-block;
+  -webkit-flex: @flex;
+  -moz-box-flex: @flex;
+  -ms-flex: @flex;
+  flex: @flex;
+  height: 100%;
+	}
+html, body{
+	height:100%;
+	width:100%;
+	overflow:hidden;
+	}
+/*最大盒子*/		
+.user-box{
+	/*width:@width;
+	height:@height;*/
+	height:100%;
+	width:100%;
+}
+/*头部导航下的内容盒子*/
+.content{
+	width:@width - 0.29rem - 0.30rem;
+	/*height:9.9rem;*/
+	/*height:@height -0.9rem;*/
+    height:~'calc(100% - 1.2rem)';
+	padding-right:0.29rem;
+	padding-left:0.30rem;
+  background-color: #030d26;
+	/*内容顶部的批量操作...盒子*/
+	.content-top{
+		  width:@width - 0.29rem - 0.30rem;
+		  height:0.73rem;
+		 
+		  a{
+			  width:1.28rem;
+			  height:0.38rem;
+			  background: @bgcolor;
+			  border-radius:@radius;
+			  line-height:0.38rem;
+			  font-size:@fontSize;
+			  text-align:center;
+			  color:#fff;
+			  margin-top:0.35rem;
+			  margin-left:0.30rem;
+			  cursor:pointer;
+          }
+          /*确定与取消的大盒子*/
+          .dete-cancel{
+            width: 3.2rem;
+            height: 0.38rem;
+            margin-top:0.35rem;
+
+            /*确定与取消按钮*/
+            .determine,.cancel{
+              width: 1.28rem;
+              height: 0.38rem;
+              cursor:pointer;
+              background:@bgcolor;
+              border-radius: @radius;
+              text-align: center;
+              line-height: 0.38rem;
+              font-size:@fontSize;
+              color: #ffffff;
+              margin-left:0.30rem;
+            }
+            .determine{
+              background: #f15151;
+            }
+            .determine:hover{
+              background:#9a3333;
+            }
+            .determine:active{
+              background:#9a3333;
+            }
+            .cancel:hover{
+              background: @hoverbgColor;
+            }
+            .cancel:active{
+              background:@activebgColor;
+            }
+          }
+          .span-search{
+            width: 3.1rem;
+            height: 0.38rem;
+            margin-top:0.35rem;
+            margin-left:0.30rem;
+             /*搜索输入框*/
+            input.txt-search{;
+              width: 2.6rem;
+              height: 0.38rem;
+              border: 0.01rem solid #4a69a4;
+              border-radius:@radius 0 0 @radius;
+              padding-left: 0.09rem;
+              font-size:0.16rem;
+              background: none;
+              color: #eef5ff;
+            }
+            /*搜索字体库*/
+            i{
+              width: 3.1rem - 2.69rem;
+              height: 0.38rem;
+              background:@bgcolor;
+              text-align: center;
+              line-height: 0.38rem;
+              font-size:@fontSize;
+              display: inline-block;
+              color: #fff;
+              border-radius: 0 @radius @radius 0;
+              cursor: pointer;
+              &:hover{
+                background:@hoverbgColor;
+              }
+            }
+          }
+          a:hover{
+              background:@hoverbgColor;
+          }
+          a:active{
+              background:@activebgColor;
+          }
+		}
+	 /*tab数据*/
+	 .content-tab{
+		  width:19.2-0.29rem - 0.30rem ;
+		 /* height:9.9rem - 0.73rem - 0.17rem;*/
+          height:~'calc(100% - 0.73rem - 0.17rem)';
+		  padding-top:0.17rem;
+		  
+		  /*表头*/
+		  .tab-tit{
+			  width:19.2-0.29rem - 0.30rem ;
+			  height:0.58rem;
+			  color:#eef5ff;
+        dl{
+          background-color: #172449;
+        }	  
+		 }	
+		 /*表格公用部分*/
+        .all-sel-box{
+
+        }
+		dl{
+				  width:19.2-0.29rem - 0.30rem ;
+			    height:0.57rem;
+				  line-height:0.57rem;
+				  font-size:0.21rem;
+          color: #eef5ff;			 
+				  i.icon-xuanzhong{
+				    font-size:0.32rem;
+            color: @bgcolor;
+            cursor: pointer;
+				   }
+				   i.icon-weixuanzhong{
+				    font-size:0.32rem;
+             color: @bgcolor;
+             cursor: pointer;
+				   }
+				   /*全选*/				 
+				  dd.all-sel{
+					   .flex(0.42);
+					  text-align:center;					 
+					  }
+				  dd.sel-item{
+					  .flex(0.42);
+					  text-align:center;
+					  }
+				  dd.username{
+					  .flex(1.35);
+					 } 
+			      dd.time{
+				  .flex(1.51);
+				  em{
+			          	font-size:0.25rem;
+			          	padding-left:0.05rem;
+			         }
+				  } 
+				  dd.state{
+				  .flex(1);
+				     } 
+				  dd.power{
+				  .flex(0.98);
+				     } 
+				  dd.operation{
+				  .flex(0.7);
+				     } 
+				 }
+			  
+		 }
+		 /*数据内容*/
+		 .tab-body{
+			 width:19.2-0.29rem - 0.30rem ;
+			 /*height:6.8rem;*/
+       height:~'calc(100% - 0.58rem)';
+			 color:#333333;
+			 overflow:hidden;
+			 i{
+				  font-size:0.22rem;
+			  }
+			 dl{
+				 height:0.80rem;
+				  line-height:0.80rem;
+				  font-size:0.22rem;
+          border-bottom:0.01rem solid #374569;
+			   }
+			   /*list数据列表的悬停效果*/
+			   dl:hover{
+          box-shadow: 0 0 35px #8fc6ed inset;
+			   }
+				 /*操作功能的字体图标*/  
+				dd.operation{
+				  .flex(0.7);
+				  
+				  ul{
+					  width:100%;
+					  .display();
+					  li{
+						 width: 0.5rem;
+						 height: 100%;
+						 i{
+							font-size:0.22rem;
+              cursor: pointer;
+						  }
+             	 i.icon-yulan{
+              	  color: #3cebbc;
+             	 }
+						  i.icon-bianji{
+							  color:#4335c6;
+						      font-size: 0.26rem;
+						  }
+						  i.icon-ban{
+							  color:#e41212;
+						  }
+						  i.icon-shanchu{
+						  	color:red;
+						  }
+						}
+					 }
+					 
+				 }
+			}
+	}
+	
+/*创建用户弹出层  start*/
+.list-information-box{
+    /* padding:0.33rem 0.80rem 0; */
+    margin: 0.33rem auto 0;
+    ul{
+       width:10.48rem;
+       background:#eee;
+       margin-bottom:0.50rem;
+       li{
+         float:left;
+         div{
+            font-size:0.20rem;
+            overflow:hidden;
+            label{
+              float:left;
+              width:1.08rem;
+              height:0.38rem;
+              line-height:0.38rem;
+              color: #eef5ff;
+            };
+            select{
+               cursor:pointer;
+               border:0.01rem solid #4a69a4;
+               border-radius:0.04rem;
+               height:0.38rem;
+               padding-left:0.10rem;
+               background-color: #172449;
+               color: #eef5ff;
+               option{
+                  cursor:pointer;
+                  height:0.38rem;
+               } 
+            }
+            input{
+               float:left;
+               width:9.32rem;
+               height:0.38rem;
+               border:0.01rem solid #4a69a4;
+               border-radius:0.04rem;
+               padding-left:0.10rem;
+               background-color: #172449;
+               color: #eef5ff;
+            }
+            textarea{
+               float:left;
+               width:9.32rem;
+               border:0.01rem solid #4a69a4;
+               border-radius:0.04rem;
+               height:1.38rem;
+               padding-left:0.10rem;
+               background-color: #172449;
+               color: #eef5ff;
+            }
+         };
+         p{
+           float:left;
+           padding-left:1.08rem;
+           height:0.29rem;
+           line-height:0.29rem;
+           font-size:0.14rem;
+           color:red;
+         }
+         &.short-item{
+             select{
+                width:3.77rem;
+             }
+             input{
+               width:3.77rem;
+            }
+         };
+         &.short-item-margin{
+           margin-right:0.70rem;
+         }
+       }
+       .list-btn{
+          float:left;
+          width:100%;
+          margin:0.13rem 0 0.30rem 0;
+          height:0.38rem;
+          a{
+            display:block;
+            margin:0 auto;
+            width:1.28rem;
+            height:0.38rem;
+            line-height:0.38rem;
+            background:#4a69a4;
+            color:#fff;
+            font-size:0.18rem;
+            text-align:center;
+            border-radius:0.04rem;
+            &:hover{
+               background: #4e5a7a;
+            };
+            &:active{
+               background: #4e5a7a;
+            };
+          }
+       }
+    }
+}
+/****end****/
+.z-comm-layer-delete-box .z-delete-fangshi{
+	margin: 0.35rem 0 0 0 !important;
+    text-align: left !important;
+    position: relative;
+    padding-left:0.52rem;
+}
+
+.z-comm-layer-delete-box .z-delete-fangshi:before{
+    position: absolute;
+    content: '';
+    left: 0.4rem;
+    top: 0.03rem;
+    height: 0.2rem;
+    width: 0.03rem;
+    background-color: #405e9a;
+}
+
+.user-radio-box{
+    margin-bottom: 0.5rem;
+}
+
+.user-radio{
+	margin-top:0.25rem;
+    font-size: 0.18rem;
+    color: #eef5ff;
+	padding-left:0.4rem;
+}
+
+.user-radio .iconfont{
+  color:#ebeffa;
+  font-size: 0.18rem;
+  padding-right: 0.08rem;
+}
+
+.z-comm-layer-box.z-delete.h344{
+  height: 3.44rem !important;
+  background-image: url(../../images/bg_delete1.png?1) !important;
+}
+
+.z-comm-layer-delete-box.h252{
+	height:2.52rem !important;
+}
+
+/**新增删除弹窗**/
+.add-delete{
+	width:6rem;
+	padding-top:0.12rem;
+}
+
+.add-delete-input{
+	margin: 0.2rem 0;
+    text-align: center;
+}
+
+.add-delete-input input{
+    padding:0 0.12rem;
+	width:80%;
+	height: 0.38rem;
+    line-height: 0.36rem;
+    font-size: 0.18rem;
+    color: #cdd8f8;
+    background-color: #18264f;
+    border: 0.01rem solid #4f608d;
+}
+
+.add-delete-op{
+	padding: 0.25rem 0;
+    text-align: center;
+}
+
+.add-delete-op button{
+	width:1.28rem;
+}
+
+.add-delete-op .sham-btn:first-child {
+    margin-right: 1.7rem;
+ }
+ 
+ .add-delete-txt{
+ 	font-size:0.2rem;
+ 	color:#fff;
+ 	text-align:center;
+ 	line-height:0.6rem;
+ }

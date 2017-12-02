@@ -1,0 +1,89 @@
+10
+
+dir
+40811
+svn://wuzhen@192.168.10.244/cms/record_stream/branch/cms/cms/src/main/webapp/resources/js
+svn://wuzhen@192.168.10.244
+
+
+
+2017-11-29T09:08:59.993133Z
+40697
+wuzhen
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+0e7bc8c6-2629-4661-8eed-986d037f5247
+
+cloudResources
+dir
+
+common
+dir
+
+contentEditing
+dir
+
+controls
+dir
+
+login
+dir
+
+main
+dir
+
+operationManagement
+dir
+
+personalResources
+dir
+
+userManagement
+dir
+
+wsconect.js
+file
+
+
+
+
+2017-11-28T06:41:31.317000Z
+73b1da5e25bbeeaa423e970b436bcf37
+2017-07-28T02:50:26.446824Z
+31652
+yushaohua
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+19627
+
